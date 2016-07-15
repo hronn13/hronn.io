@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainViewContainer {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.portrait {
+  position: fixed;
+  margin: auto;
+  top: -35vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+  box-shadow: 3px 3px 23px 2px #4c4c4c;
+}
+
+.educationContainer {
+  top: 100vh;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.experienceContainer {
+  top: 200vh;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
