@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    var $moveHorizontal = $('.triangle-topleft');
+    var $moveHorizontal = $('.mainView_triangle');
+    var $greetingTextOpacity = $('.aboutMe_view_header');
 
     $(window).scroll(function () {
         var s = $(this).scrollTop(),
@@ -9,8 +10,12 @@ $(document).ready(function () {
         scrollPercent = (s / (d - c));
 
         var position = (scrollPercent * ($(document).width() - $moveHorizontal.width()));
+        console.log('pos', position);
         $moveHorizontal.css({
           transform: 'translateX('+ -position/15 +'%)'
+        });
+        $greetingTextOpacity.css({
+          opacity: position/1000
         });
     });
 });
