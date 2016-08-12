@@ -1,2 +1,2 @@
-# hronn.is
+# hronn.io
 Online CV
